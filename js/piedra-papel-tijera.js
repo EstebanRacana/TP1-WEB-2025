@@ -1,7 +1,10 @@
+const minijuego_2=document.querySelector(".minijuego_2");
 let jugador;
 let computadora;
-let opciones = ['Piedra', 'Papel', 'Tijera'];
-function IniciarJuego(){
+const button=document.getElementById("button");
+button.textContent="Jugar";
+const opciones = ['Piedra', 'Papel', 'Tijera'];
+button.addEventListener("click",()=>{  
     jugador = prompt("Elige: Piedra, Papel o Tijera");
     computadora = opciones[Math.floor(Math.random() * opciones.length)];
     if(jugador === computadora){     
@@ -23,4 +26,4 @@ function IniciarJuego(){
     IniciarJuego();;
 }else{
 alert("Error, ingreso de datos incorrecto.")
-}};
+}});
