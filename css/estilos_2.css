@@ -7,8 +7,8 @@ body {
 }
 
 /* Estilo del botón que se crea en JS */
-button{
-    background-color: #f00606;
+button {
+    background-color: #007BFF;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -19,5 +19,5 @@ button{
 }
 
 button:hover {
-    background-color: #e72006;
+    background-color: #0056b3;
 }
