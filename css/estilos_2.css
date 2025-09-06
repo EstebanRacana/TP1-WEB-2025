@@ -1,4 +1,4 @@
-/* Estilos globales */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f3f3f3;
@@ -6,7 +6,6 @@ body {
     padding: 30px;
 }
 
-/* Estilo de los botones */
 button {
     background-color: #007BFF;
     color: white;
