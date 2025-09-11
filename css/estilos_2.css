@@ -1,12 +1,10 @@
-/* Estilos globales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f3f3f3;
+    background-color: #0aefff;
     text-align: center;
     padding: 30px;
 }
 
-/* Estilo de los botones */
 button {
     background-color: #007BFF;
     color: white;
@@ -21,4 +19,10 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+.Salir{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
 }
