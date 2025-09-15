@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     background-color: #aaedf1;
@@ -20,9 +21,59 @@ button {
 button:hover {
     background-color: #0056b3;
 }
-.Salir{
+
+.Salir {
     margin-top: 20px;
     text-align: center;
     font-size: 18px;
     font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+    body {
+        padding: 20px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .Salir {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        display: block;
+        width: 70%;
+        max-width: 250px;
+        margin: 10px auto;
+        font-size: 1rem;
+    }
+
+    .Salir {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    button {
+        width: 80%;
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .Salir {
+        font-size: 12px;
+    }
 }
