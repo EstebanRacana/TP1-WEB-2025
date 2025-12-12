@@ -1,0 +1,113 @@
+/* CONTENEDOR */
+.blackjack-container {
+  text-align: center;
+  color: white;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.mesa {
+  margin-top: 25px;
+  padding: 20px;
+  background: #065f0b;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #000a;
+}
+
+.cartas {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* CARTAS */
+.carta {
+  width: 70px;
+  height: 100px;
+  border-radius: 10px;
+  font-size: 26px;
+  font-weight: bold;
+  border: 2px solid #000;
+  box-shadow: 0 4px 8px #000a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  backface-visibility: hidden;
+}
+
+.carta-wrapper {
+  width: 70px;
+  height: 100px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+
+/* CARTA OCULTA (DORSO ELEGANTE) */
+.carta-back.pattern-back {
+  background: repeating-linear-gradient(
+      45deg,
+      #000,
+      #000 5px,
+      white 5px,
+      white 10px
+    );
+  border-radius: 10px;
+  border: 2px solid #000;
+  transform: rotateY(180deg);
+}
+
+/* OCULTA ANTES DEL GIRO */
+.hidden-card {
+  transform: rotateY(0deg);
+}
+
+/* GIRA LA CARTA */
+.flip-card {
+  transform: rotateY(180deg);
+}
+
+/* ANIMACIÓN DE REPARTO */
+.deal-animation {
+  animation: deal 0.45s ease-out forwards;
+}
+
+@keyframes deal {
+  0% {
+    transform: translate(-150px, -120px) rotate(-25deg);
+    opacity: 0;
+  }
+  60% {
+    transform: translate(10px, 5px) rotate(4deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+/* FADE IN */
+.fade-in {
+  animation: fade 0.8s ease;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* BOTONES */
+button {
+  padding: 10px 20px;
+  margin: 8px;
+  border: none;
+  background: #ffca2c;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ffd76e;
+}
