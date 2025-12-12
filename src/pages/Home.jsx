@@ -36,8 +36,8 @@ const Home = () => {
         {/* Juego 3: Blackjack */}
         <div className="minijuego_3">
           <h3>Blackjack</h3>
-          <p>Proximamente...</p>
-          <img src="" alt="Imagen del juego blackjack" />
+          <p>Este juego es el famoso BlackJack, compite contra la computadora y ganala sumando puntos a tu baraja y apostando de forma ficticia</p>
+          <img src="/img/imagen_blackJack.png" alt="Imagen del juego blackjack" />
           <Link to="/blackjack">Jugar</Link>
         </div>
       </main>
