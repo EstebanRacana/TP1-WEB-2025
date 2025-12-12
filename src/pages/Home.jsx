@@ -38,7 +38,7 @@ const Home = () => {
           <h3>Blackjack</h3>
           <p>Proximamente...</p>
           <img src="" alt="Imagen del juego blackjack" />
-          <a href="#">Jugar</a>
+          <Link to="/blackjack">Jugar</Link>
         </div>
       </main>
       

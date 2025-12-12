@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import WordGame from './pages/WordGame';
 import RockPaperScissors from './pages/RockPaperScissors';
+import BlackJack from './pages/BlackJack';
 import './App.css';
-
 function App() {
   return (
     <Router>
@@ -14,6 +14,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/word-game" element={<WordGame />} />
           <Route path="/rock-paper-scissors" element={<RockPaperScissors />} />
+          <Route path="/blackjack" element={<BlackJack />} />
         </Routes>
       </div>
     </Router>
